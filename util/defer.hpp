@@ -1,5 +1,5 @@
-#ifndef _DEFER_HPP_
-#define _DEFER_HPP_
+#ifndef DEFER_HPP_
+#define DEFER_HPP_
 #include <functional>
 namespace cpputil {
 #define CONCAT_(a, b) a ## b
