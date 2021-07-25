@@ -5,21 +5,15 @@
 using namespace cpputil;
 
 int test_defer() {
-    std::ofstream f1("test.txt");
-    int a = 8;
-    time_t start_ts, finish_ts;
-    time(&start_ts);
+    int a = 1;
     DEFER({
-              std::cout << "defer called, " << "value of variable a(int) is : " << a << std::endl;
-              f1.close();
+        a++;
           });
-    time(&finish_ts);
-    f1 << "hello defer" << std::endl;
-    std::cout << "defer consume time:" << (finish_ts - start_ts)/1000 << "ms" << std::endl;
-    a++;
-    return 0;
+    return a;
 }
 
 int main() {
-    test_defer();
+    int res = test_defer();
+    std::cout << res << std::endl;
+    return 0;
 }
