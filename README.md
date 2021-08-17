@@ -19,3 +19,9 @@ f1 << "hello defer" << std::endl;
 a++;
 return 0;
 ```
+
+### concurrency
+#### ring-buffer.hpp
+lock-free mpmc queue with linked list implemention.
+#### murmurhash.hpp
+murmurhash implemention.
