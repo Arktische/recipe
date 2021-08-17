@@ -1,0 +1,3 @@
+[submodule "fastio"]
+	path = fastio
+	url = https://github.com/sohardforaname/FastIO.git
