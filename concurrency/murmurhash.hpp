@@ -1,7 +1,6 @@
-#ifndef HASH_H_
-#define HASH_H_
+#pragma once
 #include <cstdint>
-uint32_t murmur3_32(const char *key, uint32_t len, uint32_t seed) {
+inline uint32_t murmur3_32(const char *key, uint32_t len, uint32_t seed) {
         static const uint32_t c1 = 0xcc9e2d51;
         static const uint32_t c2 = 0x1b873593;
         static const uint32_t r1 = 15;
@@ -50,4 +49,3 @@ uint32_t murmur3_32(const char *key, uint32_t len, uint32_t seed) {
 
         return hash;
 }
-#endif

@@ -1,4 +1,4 @@
-## cpputil
+## recipe
 useful but **NOT** fully tested cpp macros & data structures. **You should only use it in your toy project**
 
 ### file description
