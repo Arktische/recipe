@@ -3,7 +3,6 @@ useful but **NOT** fully tested cpp macros & data structures. **You should only 
 
 ### file description
 Noted that all included files have been omitted in following examples. 
-### util
 #### defer.hpp
 macro implemention for golang-flavored `defer` keyword
 
